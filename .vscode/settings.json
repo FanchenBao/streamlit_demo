@@ -1,5 +1,9 @@
 {
     "python.pythonPath": "/Users/fanchenbao/.pyenv/versions/streamlit_demo/bin/python",
     "python.formatting.provider": "black",
-    "[python]": {"editor.formatOnPaste": false}
+    "[python]": {
+        "editor.formatOnPaste": false
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true
 }

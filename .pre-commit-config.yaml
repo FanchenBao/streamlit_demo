@@ -1,0 +1,35 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: black
+        name: black
+        description: Formats Python code to follow a consistent style
+        entry: black
+        args: []
+        language: python
+        types: [python]
+    -   id: flake8
+        name: flake8
+        description: Python style guide enforcement
+        entry: flake8
+        args: []
+        language: python
+        types: [python]
+    -   id: mypy
+        name: mypy
+        description: Python type checking
+        entry: mypy
+        args: []
+        language: python
+        types: [python]
+    -   id: isort
+        name: isort
+        description: Sort import
+        entry: isort
+        args: []
+        language: python
+        types: [python]
+-   repo: https://github.com/asottile/add-trailing-comma
+    rev: v2.1.0
+    hooks:
+    -   id: add-trailing-comma
