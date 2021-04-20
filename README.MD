@@ -14,7 +14,7 @@ Listed below are the problems I have encountered during deployment. For more com
 
 ## Install `psycopg2` on AWS EC2 Amazon Linux and Debian
 
-As always `psycopg2` offers the most pain whenever it needs to be installed. According to its documentation, the most common problems are:
+As always `psycopg2` offers the most pain whenever it needs to be installed. According to its [documentation](https://www.psycopg.org/docs/install.html#build-prerequisites), the most common problems are:
 
 1. No C compiler
 2. No `Python.h` head file
