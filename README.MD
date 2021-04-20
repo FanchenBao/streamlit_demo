@@ -4,10 +4,10 @@ At the moment, this is a toy project to help me learn [Streamlit](https://stream
 # Directory Layout
 The current organization of this repo is that each individual app lives in its own folder, which contains the Python script that Streamlit runs and the data.
 
-## rssi_relative_change_overtime
+## rssi_relative_change_overtime ([app link](https://share.streamlit.io/fanchenbao/streamlit_demo/rssi_relative_change_overtime/app.py))
 This app is my first attempt at using Streamlit. It aims to offer an interactive view of RSSI drift overtime at different data collection locations. If this does not make any sense, that is fine. The sole purpose of this app is for practice and offer me an easy-to-use interface for some data exploration.
 
-_Checkout the app [here](https://share.streamlit.io/fanchenbao/streamlit_demo/rssi_relative_change_overtime/app.py)._
+
 
 # App Deployment Troubleshoot
 Listed below are the problems I have encountered during deployment. For more community support, check out the [Streamlit forum](https://discuss.streamlit.io/)
