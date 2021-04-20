@@ -1,0 +1,3 @@
+gcc
+libpg-dev
+python3-dev
