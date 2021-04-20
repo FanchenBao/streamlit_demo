@@ -31,8 +31,8 @@ sel_sensor = st.sidebar.radio("Choose a sensor", SENSORS, index=0)
 st.title("Localization Data Relative Change")
 st.write(f"## Line Plot -- Sensor {sel_sensor[1]}")
 st.write(
-    """Click data collection point to view its relative change over time.
-    Hold shift to select multiple points.""",
+    """Click data collection point on the right panel to view its RSSI relative
+    change over time. Hold shift to select multiple points.""",
 )
 
 # Plot
