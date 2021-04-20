@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 # DEFAULT
 SENSORS = ["s1", "s2", "s3", "s4"]
 SENSOR_LOC = np.array([(0, 16), (16, 16), (0, 0), (16, 0)])
@@ -27,7 +29,11 @@ sel_sensor = st.sidebar.radio("Choose a sensor", SENSORS, index=0)
 
 # Main display
 st.title("Localization Data Relative Change")
-st.write(f"## Sensor {sel_sensor[1]}: Line Plot")
+st.write(f"## Line Plot -- Sensor {sel_sensor[1]}")
+st.write(
+    """Click data collection point to view its relative change over time.
+    Hold shift to select multiple points.""",
+)
 
 # Plot
 target_df = all_plot_df[sel_sensor]  # data of the selected sensor
