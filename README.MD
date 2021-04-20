@@ -8,3 +8,19 @@ The current organization of this repo is that each individual app lives in its o
 This app is my first attempt at using Streamlit. It aims to offer an interactive view of RSSI drift overtime at different data collection locations. If this does not make any sense, that is fine. The sole purpose of this app is for practice and offer me an easy-to-use interface for some data exploration.
 
 _Checkout the app [here](https://share.streamlit.io/fanchenbao/streamlit_demo/rssi_relative_change_overtime/app.py)._
+
+# App Deployment Troubleshoot
+Listed below are the problems I have encountered during deployment. For more community support, check out the [Streamlit forum](https://discuss.streamlit.io/)
+
+## Install `psycopg2` on AWS EC2 Amazon Linux and Debian
+
+As always `psycopg2` offers the most pain whenever it needs to be installed. According to its documentation, the most common problems are:
+
+1. No C compiler
+2. No `Python.h` head file
+3. No `pg_config` file
+
+For Amazon Linux, the solution is to run `sudo yum install gcc python38-devel postgresql-devel` and then install `psycopg2`. Of course, `python38-devel` should change according to the Python version in use.
+
+For Debian, the solution is to run `sudo apt-get install gcc python3-dev libpq-dev`
+
