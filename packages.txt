@@ -1,3 +1,3 @@
 gcc
-libpg-dev
+libpq-dev
 python3-dev
