@@ -24,3 +24,5 @@ For Amazon Linux, the solution is to run `sudo yum install gcc python38-devel po
 
 For Debian, the solution is to run `sudo apt-get install gcc python3-dev libpq-dev`
 
+## "Streamlit server consistently failed status checks" Error
+This error happens recently on the free deployment service of Streamlit. There is a good discussion post on the forum, and I have chimed in [my findings](https://discuss.streamlit.io/t/manager-streamlit-server-consistently-failed-status-checks/11737/14?u=fanchenbao) as well. Read through the thread to find a work around for this problem.
