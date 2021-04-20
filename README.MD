@@ -22,7 +22,7 @@ As always `psycopg2` offers the most pain whenever it needs to be installed. Acc
 
 For Amazon Linux, the solution is to run `sudo yum install gcc python38-devel postgresql-devel` and then install `psycopg2`. Of course, `python38-devel` should change according to the Python version in use.
 
-For Debian, the solution is to run `sudo apt-get install gcc python3-dev libpq-dev`
+For Debian (the docker container used by Streamlit share is Debian), the solution is to run `sudo apt-get install gcc python3-dev libpq-dev`. Note that when we deploy the app via Streamlit share, we do not have direct access to their docker container. Therefore, according to the [documentation](https://docs.streamlit.io/en/stable/deploy_streamlit_app.html#add-or-remove-dependencies), we need to create a `packages.txt` file to list the packages we want to install.
 
 ## "Streamlit server consistently failed status checks" Error
 This error happens recently on the free deployment service of Streamlit. There is a good discussion post on the forum, and I have chimed in [my findings](https://discuss.streamlit.io/t/manager-streamlit-server-consistently-failed-status-checks/11737/14?u=fanchenbao) as well. Read through the thread to find a work around for this problem.
