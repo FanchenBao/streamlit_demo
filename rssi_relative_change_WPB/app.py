@@ -136,7 +136,7 @@ st.altair_chart(
 )
 
 # Arc Plot
-st.write("High relative change => thicker and brighter arc")
+st.write("More positive RSSI relative change => thicker and brighter arc")
 st.pydeck_chart(
     plot_arc(
         df,
