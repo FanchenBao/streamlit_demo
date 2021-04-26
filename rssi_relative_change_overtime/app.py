@@ -28,7 +28,7 @@ sensor_points_loc_df = pd.DataFrame.from_dict(
 sel_sensor = st.sidebar.radio("Choose a sensor", SENSORS, index=0)
 
 # Main display
-st.title("Localization Data Relative Change")
+st.title("Localization Data Relative Change - FAU")
 st.write(f"## Line Plot -- Sensor {sel_sensor[1]}")
 st.write(
     """Click data collection point on the right panel to view its RSSI relative

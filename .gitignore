@@ -193,4 +193,4 @@ dmypy.json
 
 # Custom ignore
 # Secrets
-EC2_key/*
+.streamlit/secrets.toml
